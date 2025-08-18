@@ -1,0 +1,32 @@
+# Build folders
+bin/
+obj/
+Debug/
+Release/
+
+# VS cache & config
+.vs/
+*.suo
+*.user
+*.rsuser
+
+# Build output files
+*.exe
+*.dll
+*.pdb
+*.log
+
+# NuGet packages (restore otomatis)
+packages/
+*.nupkg
+*.snupkg
+
+# Crystal Reports (hindari backup file rpt besar)
+*.rpt
+
+# Others
+*.dbmdl
+*.cache
+*.tmp
+*.bak
+*.log

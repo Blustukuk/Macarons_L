@@ -1,0 +1,171 @@
+Date/Time: 11/01/2024 16:54:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.ubahdatabaseado(String spName, Dictionary`2 parameters, Boolean sync)
+   at sPOSGudangMacarons.clsTrans.addSupplier() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 124
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 16:54:58
+Message: Duplicate entry 'y2' for key 'kodesupp'
+StackTrace: add_DataSupplierBulk
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 16:04:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 245
+   at sPOSGudangMacarons.clsTrans.addArtikel() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 207
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 16:04:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.FillDataTable3(String queryString, Dictionary`2 parameters)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 243
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 16:04:58
+Message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''c316eccc4fb779bca785d9a9be60939e4d0b)' at line 1
+StackTrace: CALL get_DataArtikel(@cari)
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 14:24:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 245
+   at sPOSGudangMacarons.clsTrans.addArtikel() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 207
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 14:24:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.FillDataTable3(String queryString, Dictionary`2 parameters)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 243
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 14:24:58
+Message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''c316eccc4fb779bca785d9a9be60939e4d0b)' at line 1
+StackTrace: CALL get_DataArtikel(@cari)
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 14:24:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.ubahdatabaseado(String spName, Dictionary`2 parameters, Boolean sync)
+   at sPOSGudangMacarons.clsTrans.addSupplier() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 124
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 14:24:58
+Message: Duplicate entry 'y2' for key 'kodesupp'
+StackTrace: add_DataSupplierBulk
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 12:44:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 245
+   at sPOSGudangMacarons.clsTrans.addArtikel() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 207
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 12:44:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.FillDataTable3(String queryString, Dictionary`2 parameters)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 243
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 12:44:58
+Message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''c316eccc4fb779bca785d9a9be60939e4d0b)' at line 1
+StackTrace: CALL get_DataArtikel(@cari)
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 11:54:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.ubahdatabaseado(String spName, Dictionary`2 parameters, Boolean sync)
+   at sPOSGudangMacarons.clsTrans.addSupplier() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 124
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 11:54:58
+Message: Duplicate entry 'y2' for key 'kodesupp'
+StackTrace: add_DataSupplierBulk
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 11:04:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 245
+   at sPOSGudangMacarons.clsTrans.addArtikel() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 207
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 11:04:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.FillDataTable3(String queryString, Dictionary`2 parameters)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 243
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 11:04:58
+Message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''c316eccc4fb779bca785d9a9be60939e4d0b)' at line 1
+StackTrace: CALL get_DataArtikel(@cari)
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 09:24:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 245
+   at sPOSGudangMacarons.clsTrans.addArtikel() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 207
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 09:24:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.FillDataTable3(String queryString, Dictionary`2 parameters)
+   at sPOSGudangMacarons.clsTrans.getArtikelOnline(String idArtikel) in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 243
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 09:24:58
+Message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''c316eccc4fb779bca785d9a9be60939e4d0b)' at line 1
+StackTrace: CALL get_DataArtikel(@cari)
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 09:24:58
+Message: Showing a modal dialog box or form when the application is not running in UserInteractive mode is not a valid operation. Specify the ServiceNotification or DefaultDesktopOnly style to display a notification from a service application.
+StackTrace:    at System.Windows.Forms.MessageBox.ShowCore(IWin32Window owner, String text, String caption, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultButton, MessageBoxOptions options, Boolean showHelp)
+   at Microsoft.VisualBasic.Interaction.MsgBox(Object Prompt, MsgBoxStyle Buttons, Object Title)
+   at Ext.clsExt.WriteToErrorLog(String msg, String stkTrace, String title)
+   at Connection.clsConn.ubahdatabaseado(String spName, Dictionary`2 parameters, Boolean sync)
+   at sPOSGudangMacarons.clsTrans.addSupplier() in D:\GDrive\Macarons\Macarons\sPOSGudangMacarons\clsTrans.vb:line 124
+===================================Macarons=Error=Logger===========================================
+
+Date/Time: 11/01/2024 09:24:58
+Message: Duplicate entry 'y2' for key 'kodesupp'
+StackTrace: add_DataSupplierBulk
+===================================Macarons=Error=Logger===========================================
+
