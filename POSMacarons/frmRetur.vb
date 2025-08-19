@@ -5,9 +5,6 @@
         Dispose()
     End Sub
 
-    Private Sub txtcarinota_TextChanged(sender As Object, e As EventArgs) Handles txtcarinota.TextChanged, txtBarcode.TextChanged
-
-    End Sub
     Private Sub tampilkanData(ByVal dt As DataTable, ByVal dt2 As DataTable)
         dt = loadDataPenjualanPOS(txtcarinota.Text)
         dt2 = loadDataReturPOS(txtcarinota.Text)

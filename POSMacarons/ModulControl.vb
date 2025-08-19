@@ -494,7 +494,7 @@ Module ModulControl
                     Dim bcode As String = ""
                     ' HEADER
                     valuesHeader =
-    $"""('{noPenjualan}',NOW(),'{noMember}','{userid}','1','{bayar}','{flg_edc}','{bank_id}','{noedc}',{diskonrupiah},{diskonpersen},'{nokasir}','{flg_qris}','{totalsementara}','{totalasli}')"""
+                            $"""('{noPenjualan}',NOW(),'{noMember}','{userid}','1','{bayar}','{flg_edc}','{bank_id}','{noedc}',{diskonrupiah},{diskonpersen},'{nokasir}','{flg_qris}','{totalsementara}','{totalasli}')"""
 
                     ' DETAIL
                     valuesDetail = ""
@@ -520,7 +520,7 @@ Module ModulControl
 
                     ' === Panggil SP ===
                     Dim penjualanTambahQuery As String =
-    $"CALL POS_add_DataPenjualanPOS2({valuesHeader}, {valuesDetail});"
+                        $"CALL POS_add_DataPenjualanPOS2({valuesHeader}, {valuesDetail});"
                     queries.Add(penjualanTambahQuery)
 
                     If diskem Then
@@ -961,27 +961,24 @@ Module ModulControl
             If dt.Rows.Count > 0 Then
                 Dim noRetur As String = generateNoReturPOS()
                 userid = frmPOS2.lblUserID.Text
-                Dim valuesRetur As String = ""
-                Dim valuesPenjualan As String = ""
+                Dim valuesHeader As String = ""
+                Dim valuesDetail As String = ""
+                Dim grandttl As Integer = 0
+
                 For Each row As DataRow In dt.Rows
-                    Dim returID As String = getidenkripsiplus(i)
                     Dim ttl As Integer = row("jumlah") * row("harga_jual")
-                    valuesRetur &= $"('{returID}','{noRetur}',curdate(),'{row("kode")}','{row("harga_jual")}','{row("jumlah")}',now(),'{nonota}','{userid}','{kasir}'),"
-                    valuesPenjualan &= $"('{returID}','{nonota}',curdate(),'Retur','{row("kode")}','-{row("jumlah")}','{row("harga_jual")}','{ttl}','{userid}','{kasir}'),"
+                    grandttl += ttl
+                    valuesDetail &= $"('{{header_id}}','{row("kode")}','{row("harga_jual")}','{row("jumlah")}','{ttl}'),"
                     Dim updateStok As String = $"CALL POS_update_StokForRetur('{row("kode")}', {row("jumlah")});"
                     queries.Add(updateStok)
-                    'Dim updatePenjualan As String = $"CALL POS_update_jmlPenjualanForRetur('{row("kode")}','{nonota}',{row("jumlah")});"
-                    'queries.Add(updatePenjualan)
                     i += 1
                 Next
+                valuesHeader = $"""('{noRetur}',curdate(),'{nonota}','{userid}','{kasir}',now(),now(),{grandttl})"""
+                valuesDetail = "(" & Chr(34) & Left(valuesDetail, valuesDetail.Length - 1) & Chr(34) & ")"
 
-                valuesRetur = "(" & Chr(34) & Left(valuesRetur, valuesRetur.Length - 1) & Chr(34) & ")"
-                valuesPenjualan = "(" & Chr(34) & Left(valuesPenjualan, valuesPenjualan.Length - 1) & Chr(34) & ")"
 
-                Dim returTambahQuery As String = $"CALL POS_add_DataRetur {valuesRetur};"
+                Dim returTambahQuery As String = $"CALL POS_add_DataReturPOS2 ({valuesHeader}, {valuesDetail});"
                 queries.Add(returTambahQuery)
-                Dim penjualanTambahQuery As String = $"CALL POS_add_DataPenjualanForRetur {valuesPenjualan};"
-                queries.Add(penjualanTambahQuery)
 
                 Dim delReturTemp As String = $"CALL POS_del_ALLDataReturTemp('{kasir}');"
                 queries.Add(delReturTemp)
